@@ -8,7 +8,7 @@ const useInfiniteScroll = () => {
 
   const handleScroll = debounce(() => {
     if (
-      Math.round(window.innerHeight + document.documentElement.scrollTop) !==
+      Math.ceil(window.innerHeight + document.documentElement.scrollTop) !==
         document.documentElement.offsetHeight ||
       loading
     ) {
